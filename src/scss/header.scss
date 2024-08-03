@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  min-height: 104px;
+  padding-right: 64px;
+  padding-left: 64px;
+  background-color: $color-white;
+
+  &__burger-button {
+    display: none;
+    position: relative;
+    flex-shrink: 0;
+    width: 24px;
+    height: 14px;
+    background-image: linear-gradient($color-black, $color-black);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 2px;
+    background-clip: content-box;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 0;
+      left: 0;
+      background-color: $color-black;
+    }
+
+    &::after {
+      top: initial;
+      bottom: 0;
+    }
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    margin-right: 9.04%;
+
+    @media (max-width: 1366px) {
+      margin-right: 0;
+    }
+
+    @media (max-width: 768px) {
+      svg {
+        width: 99px;
+      }
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      column-gap: 24px;
+
+      &-item {
+        white-space: nowrap;
+        
+        &-link {
+          font-size: 14px;
+          letter-spacing: 0.8px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $color-black;
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    margin-left: auto;
+
+    &-tel {
+      display: block;
+      color: $color-black;
+      font-size: 16px;
+      font-weight: 500;
+      white-space: nowrap;
+      text-decoration: none;
+      letter-spacing: -0.31px;
+    }
+
+    &-order {
+      font-size: 14px;
+      color: $color-black30;
+    }
+
+    @media (max-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 24px;
+    margin-left: 5.98%;
+
+    & > button {
+      cursor: pointer;
+    }
+
+    & > button svg {
+      vertical-align: middle;
+    }
+
+    &-cart {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 500;
+      color: $color-black;
+      background-color: $color-grass;
+    }
+
+    @media (max-width: 1366px) {
+      margin-left: 0;
+    }
+
+    @media (max-width: 1024px) {
+      :not(:last-child) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1366px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    min-height: 64px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
