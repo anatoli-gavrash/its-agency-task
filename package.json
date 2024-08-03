@@ -1,0 +1,27 @@
+{
+  "name": "its-agency-task",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Technical task for ITS Agency company",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8",
+    "swiper": "^11.1.6"
+  }
+}
