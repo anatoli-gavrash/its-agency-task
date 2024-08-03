@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px solid $color-black30;
+  outline-offset: 2px;
+}
+
+html {
+  scrollbar-gutter: stable;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input,
+textarea,
+select {
+  border: none;
+  background-color: unset;
+}
+
+button {
+  border: none;
+  background-color: unset;
+}
