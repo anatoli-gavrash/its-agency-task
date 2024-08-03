@@ -1,0 +1,15 @@
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: unset;
+  transition: background-color 1s;
+  z-index: 1;
+  
+  &.show {
+    display: block;
+    background-color: $color-black70;
+  }
+}
